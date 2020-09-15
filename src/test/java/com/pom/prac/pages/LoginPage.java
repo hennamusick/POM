@@ -1,4 +1,4 @@
-package com.pom.prac.object;
+package com.pom.prac.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
