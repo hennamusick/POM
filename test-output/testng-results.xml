@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-15T09:39:38Z" name="Default suite" finished-at="2020-09-15T09:39:48Z" duration-ms="10245">
+  <suite started-at="2020-10-04T08:59:36Z" name="Default suite" finished-at="2020-10-04T08:59:37Z" duration-ms="1889">
     <groups>
     </groups>
-    <test started-at="2020-09-15T09:39:38Z" name="Default test" finished-at="2020-09-15T09:39:48Z" duration-ms="10245">
+    <test started-at="2020-10-04T08:59:36Z" name="Default test" finished-at="2020-10-04T08:59:37Z" duration-ms="1889">
       <class name="com.pom.prac.tests.LoginTest">
-        <test-method signature="loginTest()[pri:0, instance:com.pom.prac.tests.LoginTest@f1da57d]" started-at="2020-09-15T09:39:38Z" name="loginTest" finished-at="2020-09-15T09:39:48Z" duration-ms="10187" status="PASS">
+        <test-method signature="verifyThatTheLandingPageIsNavigatedCorrectly()[pri:0, instance:com.pom.prac.tests.LoginTest@62dae245]" started-at="2020-10-04T08:59:36Z" name="verifyThatTheLandingPageIsNavigatedCorrectly" finished-at="2020-10-04T08:59:37Z" duration-ms="1821" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
+        </test-method> <!-- verifyThatTheLandingPageIsNavigatedCorrectly -->
       </class> <!-- com.pom.prac.tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.pom.prac.base.Utilities;
+
 public class LoginPage {
 	WebDriver driver;
 
@@ -14,20 +16,19 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//input[@id='login1']")
-	//By username = By.xpath(".//*[@id='login1']");
+	@FindBy(xpath = "//input[@id='login1']") // By username =
+	// By.xpath(".//*[@id='login1']");
 	WebElement username_email;
 
-	@FindBy(name = "passwd")
-	//By passwd = By.name("passwd");
+	@FindBy(name = "passwd") // By passwd = By.name("passwd");
 	WebElement password;
 
-	@FindBy(name = "proceed")
-	//By go = By.name("proceed");
+	@FindBy(name = "proceed") // By go = By.name("proceed");
 	WebElement goButton;
-	//By home = By.linkText("Home");
+	// By home = By.linkText("Home");
 
 	public void setEmailId(String username) {
+		Utilities.waitForClick(username_email);
 		username_email.clear();
 		username_email.sendKeys(username);
 	}
@@ -35,7 +36,7 @@ public class LoginPage {
 	public void setPassword(String passwd) {
 		password.clear();
 		password.sendKeys(passwd);
-		
+
 	}
 
 	public void goButton() {
@@ -44,4 +45,6 @@ public class LoginPage {
 
 	public void home() {
 	}
+
+
 }

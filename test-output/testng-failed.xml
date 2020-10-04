@@ -5,7 +5,7 @@
     <classes>
       <class name="com.pom.prac.tests.LoginTest">
         <methods>
-          <include name="loginTest"/>
+          <include name="verifyThatTheLandingPageIsNavigatedCorrectly"/>
         </methods>
       </class> <!-- com.pom.prac.tests.LoginTest -->
     </classes>
