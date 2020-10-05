@@ -1,31 +1,47 @@
 package com.pom.prac.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 
 import com.pom.prac.base.Base;
 import com.pom.prac.pages.DropDownPage;
 
-
 @Test
 public class DropDownTest {
 
+	WebDriver driver = Base.setupDriverForDropDowns();
+	DropDownPage dropDownPage = new DropDownPage(driver);
+
 	/*
-	 * WebDriver driver = BaseDropDowns.setupDriver();
-	 * 
-	 * @Test public void verifyThatCurrencySelectCorrectly() {
-	 * 
-	 * DropDownPage dropDownPage = new DropDownPage(driver);
-	 * dropDownPage.selectCurrency(); }
+	 * @BeforeTest public void beforeEachMethod() { Base.setupWebDriver(); }
+	 */
+
+	/*
+	 * @AfterMethod public void afterEachMethod() { Base.endTheStage(); }
 	 */
 	
-	WebDriver driver = Base.setupDriver();
 
 	@Test
-	public void verifyThatTheLandingPageIsNavigatedCorrectly() {
-		
-		//WebDriver driver = Base.setupDriver();
-		DropDownPage dropDownPage = new DropDownPage(driver);
-		dropDownPage.selectCurrency();
+	public void averifyadeals() {
+		dropDownPage.clickDeals();
 	}
+
+	@Test
+	public void verifyThatTheALandingPageIsNavigatingCorrectly() {
+		dropDownPage.selectCurrency();
+		Assert.assertEquals(dropDownPage.getSelectedCurrencyValue(), "AED");
+	}
+
+	@Test
+	public void verifyThatTheFromAndToIsSelectingCorrectly() throws InterruptedException {
+		dropDownPage.clickFromDropDown();
+		dropDownPage.selectBengaluru();
+
+		dropDownPage.clickToDropDown();
+		dropDownPage.selectChennai();
+		Assert.assertEquals(dropDownPage.getSelectedChennai(), "Chennai (MAA)");
+		Assert.assertEquals(dropDownPage.getSelectedBengaluru(), "BLR");
+	}
+
 }

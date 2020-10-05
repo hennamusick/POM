@@ -2,6 +2,7 @@ package com.pom.prac.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Base {
 
@@ -19,6 +20,8 @@ public class Base {
 	}
 	
 	public static WebDriver setupDriverForDropDowns() {
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--incognito");
 		System.setProperty("webdriver.chrome.driver", "D:\\Files\\Projects\\Browsers Exe Files\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.spicejet.com");
