@@ -17,15 +17,14 @@ public class DropDownPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public void closeDriver() {
 		driver.close();
 	}
-	
-	
-	  public void openDriver() throws InterruptedException {
-	  driver.navigate().wait(10000); }
-	 
+
+	public void openDriver() throws InterruptedException {
+		driver.navigate().wait(10000);
+	}
 
 	@FindBy(id = "ctl00_mainContent_DropDownListCurrency")
 	WebElement currency;
@@ -41,7 +40,7 @@ public class DropDownPage {
 
 	@FindBy(xpath = "(//a[@value ='MAA'])[2]")
 	WebElement chennai;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'DEALS')]")
 	WebElement dealsLink;
 
@@ -78,11 +77,11 @@ public class DropDownPage {
 		Utilities.waitForClick(chennai);
 		chennai.click();
 	}
-	
+
 	public String getSelectedChennai() {
 		return toDropDown.getAttribute("value");
 	}
-	
+
 	public void clickDeals() {
 		Utilities.waitForClick(dealsLink);
 		dealsLink.click();
