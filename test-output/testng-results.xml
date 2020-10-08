@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-07T06:43:04Z" name="Default suite" finished-at="2020-10-07T06:43:04Z" duration-ms="424">
+  <suite started-at="2020-10-08T07:34:58Z" name="Default suite" finished-at="2020-10-08T07:35:08Z" duration-ms="9907">
     <groups>
     </groups>
-    <test started-at="2020-10-07T06:43:04Z" name="Default test" finished-at="2020-10-07T06:43:04Z" duration-ms="424">
-      <class name="com.pom.prac.tests.CheckBoxTest">
-        <test-method signature="verifyThatTheCheckBoxIsSelectingCorrectly()[pri:0, instance:com.pom.prac.tests.CheckBoxTest@62dae245]" started-at="2020-10-07T06:43:04Z" name="verifyThatTheCheckBoxIsSelectingCorrectly" finished-at="2020-10-07T06:43:04Z" duration-ms="378" status="PASS">
+    <test started-at="2020-10-08T07:34:58Z" name="Default test" finished-at="2020-10-08T07:35:08Z" duration-ms="9907">
+      <class name="com.pom.prac.tests.CalenderUITest">
+        <test-method signature="verifyThatCurrentDayIsPickedUpCorrectly()[pri:0, instance:com.pom.prac.tests.CalenderUITest@48c40605]" started-at="2020-10-08T07:34:58Z" name="verifyThatCurrentDayIsPickedUpCorrectly" finished-at="2020-10-08T07:35:08Z" duration-ms="9863" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyThatTheCheckBoxIsSelectingCorrectly -->
-      </class> <!-- com.pom.prac.tests.CheckBoxTest -->
+        </test-method> <!-- verifyThatCurrentDayIsPickedUpCorrectly -->
+      </class> <!-- com.pom.prac.tests.CalenderUITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

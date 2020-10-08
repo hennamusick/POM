@@ -45,7 +45,7 @@ public class DropDownPage {
 	WebElement dealsLink;
 
 	public void selectCurrency() {
-		Utilities.waitForVisibility(currency);
+		Utilities.waitForVisibilityOf(currency);
 		Select select = new Select(currency);
 		select.selectByValue("AED");
 	}
@@ -85,5 +85,12 @@ public class DropDownPage {
 	public void clickDeals() {
 		Utilities.waitForClick(dealsLink);
 		dealsLink.click();
+	}
+	
+	public void selectBothFromAndToWithValues() {
+		clickFromDropDown();
+		selectBengaluru();
+		clickToDropDown();
+		selectChennai();
 	}
 }

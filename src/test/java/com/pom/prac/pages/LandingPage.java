@@ -32,13 +32,13 @@ public class LandingPage {
 	String destinationCity1 = "Berlin";
 
 	public void selectDepartureCity() {
-		Utilities.waitForVisibility(departureCity);
+		Utilities.waitForVisibilityOf(departureCity);
 		Select select = new Select(departureCity);
 		select.selectByVisibleText(departureCity1);
 	}
 
 	public void selectDestinationCity() {
-		Utilities.waitForVisibility(destinationCity);
+		Utilities.waitForVisibilityOf(destinationCity);
 		Select select = new Select(destinationCity);
 		select.selectByVisibleText(destinationCity1);
 	}

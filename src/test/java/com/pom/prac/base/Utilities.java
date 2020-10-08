@@ -15,10 +15,13 @@ public class Utilities {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
-	public static void waitForVisibility(WebElement element) {
+	public static void waitForVisibilityOfElementLocated(WebElement element) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated((By) element));
 	}
 
+	public static void waitForVisibilityOf(WebElement element) {
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
 	/*
 	 * public static void waitForVisibilityOfList(List<WebElement> elements) {
 	 * wait.until(ExpectedConditions.visibilityOfElementLocated((By) elements)); }
