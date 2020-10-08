@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pom.prac.tests.AutoSuggestiveTest">
+      <class name="com.pom.prac.tests.EnableAndDisableTest">
         <methods>
-          <include name="verifyThatSuggestedValuesAreGettingDisplayedCorrectly"/>
+          <include name="verifyThatReturnDateIsEnabledAtTheBeginning"/>
         </methods>
-      </class> <!-- com.pom.prac.tests.AutoSuggestiveTest -->
+      </class> <!-- com.pom.prac.tests.EnableAndDisableTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
