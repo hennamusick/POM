@@ -7,12 +7,11 @@ import com.pom.prac.base.Base;
 import com.pom.prac.pages.AutoSuggestivePage;
 
 public class AutoSuggestiveTest {
-	
-	WebDriver driver = Base.setupDriverAutoSuggestions();
-	AutoSuggestivePage autoSuggestivePage = new AutoSuggestivePage(driver);
-	
+
 	@Test
 	public void verifyThatSuggestedValuesAreGettingDisplayedCorrectly() {
+		WebDriver driver = Base.setupDriverAutoSuggestions();
+		AutoSuggestivePage autoSuggestivePage = new AutoSuggestivePage(driver);
 		autoSuggestivePage.addTextToCountrySearch("ind");
 		autoSuggestivePage.selectOneWebElementOfList();
 	}

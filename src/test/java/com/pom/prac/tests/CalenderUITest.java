@@ -15,12 +15,11 @@ import com.pom.prac.pages.DropDownPage;
 
 public class CalenderUITest {
 
-	WebDriver driver = Base.setupDriverForDropDowns();
-	DropDownPage dropDownPage = new DropDownPage(driver);
-	CalenderUIPage calenderUIPage = new CalenderUIPage(driver);
-
 	@Test
 	public void verifyThatCurrentDayIsPickedUpCorrectly() {
+		WebDriver driver = Base.setupDriverForDropDowns();
+		DropDownPage dropDownPage = new DropDownPage(driver);
+		CalenderUIPage calenderUIPage = new CalenderUIPage(driver);
 		dropDownPage.selectBothFromAndToWithValues();
 		calenderUIPage.selectDayOfToday();
 		System.out.println(calenderUIPage.getDepartDate());

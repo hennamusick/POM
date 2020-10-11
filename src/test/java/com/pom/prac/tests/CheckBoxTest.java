@@ -8,10 +8,9 @@ import com.pom.prac.pages.ChecksBoxPage;
 
 public class CheckBoxTest {
 
-	WebDriver driver = Base.setupDriverForDropDowns();
-	
 	@Test
 	public void verifyThatTheCheckBoxIsSelectingCorrectly() {
+		WebDriver driver = Base.setupDriverForDropDowns();
 		ChecksBoxPage checksBoxPage = new ChecksBoxPage(driver);
 		checksBoxPage.selectFamilyAndFriendsCheckbox();
 	}

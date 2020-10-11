@@ -10,12 +10,11 @@ import com.pom.prac.pages.EnableAndDisablePage;
 
 public class EnableAndDisableTest {
 
-	WebDriver driver = Base.setupDriverForDropDowns();
-	EnableAndDisablePage enableAndDisablePage = new EnableAndDisablePage(driver);
-	DropDownPage DropDownPage = new DropDownPage(driver);
-
 	@Test
 	public void verifyThatReturnDateIsEnabledAtTheBeginning() {
+		WebDriver driver = Base.setupDriverForDropDowns();
+		EnableAndDisablePage enableAndDisablePage = new EnableAndDisablePage(driver);
+		DropDownPage DropDownPage = new DropDownPage(driver);
 
 		Assert.assertEquals(false, enableAndDisablePage.getReturnDateStyle().contains("1"));
 		DropDownPage.selectBothFromAndToWithValues();
