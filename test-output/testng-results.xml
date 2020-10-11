@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-10T09:06:36Z" name="Default suite" finished-at="2020-10-10T09:07:16Z" duration-ms="40743">
+  <suite started-at="2020-10-11T10:10:22Z" name="Default suite" finished-at="2020-10-11T10:10:30Z" duration-ms="7435">
     <groups>
     </groups>
-    <test started-at="2020-10-10T09:06:36Z" name="Default test" finished-at="2020-10-10T09:07:16Z" duration-ms="40743">
-      <class name="com.pom.prac.tests.DropDownTest">
-        <test-method signature="averifyadeals()[pri:0, instance:com.pom.prac.tests.DropDownTest@338fc1d8]" started-at="2020-10-10T09:06:36Z" name="averifyadeals" finished-at="2020-10-10T09:06:48Z" duration-ms="12583" status="PASS">
+    <test started-at="2020-10-11T10:10:22Z" name="Default test" finished-at="2020-10-11T10:10:30Z" duration-ms="7435">
+      <class name="com.pom.prac.tests.WindowAlertTest">
+        <test-method signature="verifyTheAcceptingAlertWindow()[pri:0, instance:com.pom.prac.tests.WindowAlertTest@1807e3f6]" started-at="2020-10-11T10:10:22Z" name="verifyTheAcceptingAlertWindow" finished-at="2020-10-11T10:10:30Z" duration-ms="7359" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- averifyadeals -->
-        <test-method signature="verifyThatTheALandingPageIsNavigatingCorrectly()[pri:0, instance:com.pom.prac.tests.DropDownTest@338fc1d8]" started-at="2020-10-10T09:06:48Z" name="verifyThatTheALandingPageIsNavigatingCorrectly" finished-at="2020-10-10T09:06:57Z" duration-ms="9173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatTheALandingPageIsNavigatingCorrectly -->
-        <test-method signature="verifyThatTheFromAndToIsSelectingCorrectly()[pri:0, instance:com.pom.prac.tests.DropDownTest@338fc1d8]" started-at="2020-10-10T09:06:57Z" name="verifyThatTheFromAndToIsSelectingCorrectly" finished-at="2020-10-10T09:07:16Z" duration-ms="18909" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatTheFromAndToIsSelectingCorrectly -->
-      </class> <!-- com.pom.prac.tests.DropDownTest -->
+        </test-method> <!-- verifyTheAcceptingAlertWindow -->
+      </class> <!-- com.pom.prac.tests.WindowAlertTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -45,7 +45,7 @@ public class CalenderUITest {
 					(localDate.getDayOfMonth() + "/0" + (localDate.getMonthValue())));
 			System.out.println("Length:<10,>=10 ");
 		}
-
+		driver.quit();
 	}
 
 }

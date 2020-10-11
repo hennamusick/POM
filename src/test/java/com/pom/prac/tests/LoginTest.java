@@ -17,5 +17,6 @@ public class LoginTest {
 		landingPage.findingFlightfromDepartureToDestination();
 		Assert.assertEquals(landingPage.getHeaderTextOfFlightBookingPage(), "Flights from Boston to Berlin:");
 		landingPage.quitDriver();
+		driver.quit();
 	}
 }

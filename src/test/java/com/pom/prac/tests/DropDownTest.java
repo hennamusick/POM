@@ -1,6 +1,8 @@
 package com.pom.prac.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
@@ -18,19 +20,19 @@ public class DropDownTest {
 	/*
 	 * @BeforeTest public void beforeTest() { Base.getDriver(); }
 	 */
-	
-	@Test
-	public void driverQuitMethod() {
-		WebDriver driver = Base.setupDriverForDropDowns();
-		DropDownPage dropDownPage = new DropDownPage(driver);
-		dropDownPage.closeDriver();
-	}
+
+	/*
+	 * @AfterMethod public void driverQuitMethod() { WebDriver driver =
+	 * Base.setupDriverForDropDowns(); DropDownPage dropDownPage = new
+	 * DropDownPage(driver); dropDownPage.closeDriver(); }
+	 */
 
 	@Test
 	public void averifyadeals() {
 		WebDriver driver = Base.setupDriverForDropDowns();
 		DropDownPage dropDownPage = new DropDownPage(driver);
 		dropDownPage.clickDeals();
+		driver.quit();
 	}
 
 	@Test
@@ -39,6 +41,7 @@ public class DropDownTest {
 		DropDownPage dropDownPage = new DropDownPage(driver);
 		dropDownPage.selectCurrency();
 		Assert.assertEquals(dropDownPage.getSelectedCurrencyValue(), "AED");
+		driver.quit();
 	}
 
 	@Test
@@ -52,6 +55,7 @@ public class DropDownTest {
 		dropDownPage.selectChennai();
 		Assert.assertEquals(dropDownPage.getSelectedChennai(), "Chennai (MAA)");
 		Assert.assertEquals(dropDownPage.getSelectedBengaluru(), "BLR");
+		driver.quit();
 	}
 
 }

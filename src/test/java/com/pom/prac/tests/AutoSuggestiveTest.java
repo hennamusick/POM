@@ -14,6 +14,7 @@ public class AutoSuggestiveTest {
 		AutoSuggestivePage autoSuggestivePage = new AutoSuggestivePage(driver);
 		autoSuggestivePage.addTextToCountrySearch("ind");
 		autoSuggestivePage.selectOneWebElementOfList();
+		driver.quit();
 	}
 
 }

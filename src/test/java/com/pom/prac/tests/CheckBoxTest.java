@@ -13,5 +13,6 @@ public class CheckBoxTest {
 		WebDriver driver = Base.setupDriverForDropDowns();
 		ChecksBoxPage checksBoxPage = new ChecksBoxPage(driver);
 		checksBoxPage.selectFamilyAndFriendsCheckbox();
+		driver.quit();
 	}
 }

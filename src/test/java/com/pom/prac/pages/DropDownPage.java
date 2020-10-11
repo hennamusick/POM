@@ -19,7 +19,7 @@ public class DropDownPage {
 	}
 
 	public void closeDriver() {
-		driver.close();
+		driver.quit();
 	}
 
 	public void openDriver() throws InterruptedException {

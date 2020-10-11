@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pom.prac.tests.EnableAndDisableTest">
+      <class name="com.pom.prac.tests.WindowAlertTest">
         <methods>
-          <include name="verifyThatReturnDateIsEnabledAtTheBeginning"/>
+          <include name="verifyTheAcceptingAlertWindow"/>
         </methods>
-      </class> <!-- com.pom.prac.tests.EnableAndDisableTest -->
+      </class> <!-- com.pom.prac.tests.WindowAlertTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

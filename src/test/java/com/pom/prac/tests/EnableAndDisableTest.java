@@ -22,6 +22,7 @@ public class EnableAndDisableTest {
 		Assert.assertEquals(true, enableAndDisablePage.getReturnDateStyle().contains("1"));
 		enableAndDisablePage.selectOneWayRadioButton();
 		Assert.assertEquals(true, enableAndDisablePage.getReturnDateStyle().contains("0.5"));
+		driver.quit();
 	}
 
 }
